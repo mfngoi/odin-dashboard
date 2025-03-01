@@ -34,10 +34,10 @@
         </div>
 
         <div class="search-bar">
-            <img src="icons/search.svg" alt="">
+            <img tabindex="0" src="icons/search.svg" alt="">
             <input type="text">
-            <img src="icons/bell-ring.svg" alt="">
-            <img src="profile.jpg" alt="Profile" class="profile-img">
+            <img tabindex="0" src="icons/bell-ring.svg" alt="">
+            <img tabindex="0" src="profile.jpg" alt="Profile" class="profile-img">
             <p><strong>Morgan Oakley</strong></p>
         </div>
 
@@ -45,11 +45,13 @@
             <img src="profile.jpg" alt="Profile" class="profile-img">
             <div class="greeting">
                 <p>Hi there,</p>
-                <p>Morgan Oakley (@morgan)</p>
+                <p class="profile-name">Morgan Oakley (@morgan)</p>
             </div>
-            <div class="btn btn-new">New</div>
-            <div class="btn btn-upload">Upload</div>
-            <div class="btn btn-share">Share</div>
+            <div class="action-container">
+                <div tabindex="0" class="btn btn-new">New</div>
+                <div tabindex="0" class="btn btn-upload">Upload</div>
+                <div tabindex="0" class="btn btn-share">Share</div>
+            </div>
         </div>
 
         <div class="projects-container">
