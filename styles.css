@@ -106,11 +106,23 @@ h6 {
 }
 
 .logo {
+    display: flex;
     margin-bottom: 30px;
+    align-items: center;
 }
 
 .logo > * {
     display: inline;
+}
+
+.logo > img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo > p {
+    font-weight: bold;
+    font-size: large;
 }
 
 .nav-tabs {
@@ -118,8 +130,32 @@ h6 {
 }
 
 .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 60px 0 30px;
     grid-column: 2 / -1;
-    background-color: lightpink;
+}
+
+.search-bar > img {
+    width: 1rem;
+}
+
+.search-bar > input {
+    width: 50%;
+    margin-right: auto;
+    background-color: lightgray;
+    border-style: none;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.search-bar > .profile-img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 10px;
 }
 
 .action-banner {
