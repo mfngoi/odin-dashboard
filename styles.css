@@ -76,9 +76,15 @@ h6 {
 }
 
 /* ========================= */
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
 .page-container {
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh; */
+    width: 100%;
     display: grid;
     grid-template-columns: minmax(200px, 20%) 2.5fr 1fr;
     grid-template-rows: 50px 80px 1fr 1fr;
@@ -88,7 +94,7 @@ h6 {
     padding: 15px;
     grid-row: 1 / -1;
     color: white;
-    background-color: cornflowerblue;
+    background-color: #1992D4;
 }
 
 .horizontal-nav > ul {
@@ -171,6 +177,9 @@ h6 {
     padding: 0 60px 0 30px;
     grid-column: 2 / -1;
     grid-row: 2;
+    background-color: white;
+    box-shadow: 0px 5px 5px #d5d5d5;
+    z-index: 1;
 }
 
 .action-banner > .profile-img {
@@ -209,23 +218,85 @@ h6 {
     color: white;
     font-size: small;
     font-weight: 600;
-    background-color: cornflowerblue;
+    background-color: #1992D4;
 }
 
 .projects-container {
     grid-column: 2 / -2;
     grid-row: 3 / -1;
-    background-color: lightgrey;
+    background-color: #E2E8F0;
 }
 
-.announcements-container {
+.announcements-container,
+.trending-container {
+    display: flex;
+    flex-direction: column;
     grid-column: 3;
     grid-row: 3;
-    background-color: lightseagreen;
+    background-color: #E2E8F0;
+    padding: 20px 30px 0 0;
+}
+
+.announcements-item-container,
+.trending-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    width: calc(100%-30px);
+    box-shadow: 2px 2px 3px #d5d5d5;
+}
+
+.announcement-items:last-child {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+    border-bottom: none !important;
+}
+
+.announcement-items {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.announcement-items p {
+    font-size: 1rem;
+}
+
+.announcement-items p:nth-child(n+2) {
+    font-size: 0.75rem;
+    color: grey;
 }
 
 .trending-container {
     grid-column: 3;
     grid-row: 4;
-    background-color: lightgreen;
 }
+
+.trending-container .profile-img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.trending-items:last-child {
+    margin-bottom: 0px !important;
+}
+
+.trending-items {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.trending-items p {
+    font-size: 0.8rem;
+}
+
+.trending-items p:nth-child(n+2) {
+    color: grey;
+}
+
