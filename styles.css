@@ -111,6 +111,8 @@ h2 {
     width: 1rem;
     display: inline;
     margin-right: 20px;
+    /* Turn svg to white */
+    filter: invert(100%) sepia(0%) saturate(1047%) hue-rotate(259deg) brightness(114%) contrast(101%);
 }
 
 .horizontal-nav a {
@@ -131,6 +133,8 @@ h2 {
 .logo > img {
     width: 40px;
     margin-right: 10px;
+    /* Turn svg to white */
+    filter: invert(100%) sepia(0%) saturate(1047%) hue-rotate(259deg) brightness(114%) contrast(101%);
 }
 
 .logo > p {
@@ -231,6 +235,7 @@ h2 {
 .project-item-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
     gap: 20px;
 }
 
@@ -240,6 +245,14 @@ h2 {
     border-radius: 5px;
     border-left: 5px solid #F0B429;
     box-shadow: 2px 2px 3px #d5d5d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-item p:nth-child(n+2) {
+    font-size: 0.8rem;
+    color: grey;
 }
 
 .project-item-actions {
@@ -249,7 +262,7 @@ h2 {
 
 .project-item-actions > img {
     width: 1rem;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .announcements-container,
